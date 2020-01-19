@@ -3,27 +3,52 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Home</title>
+    <title>It's me Sarah</title>
     <style>
         @font-face {
             font-family: raquen;
             src: url('./fonts/Raquen.otf');
+        }
+
+        @font-face {
+            font-family: jetBrainsMono-regular;
+            src: url('./fonts/JetBrainsMono-Regular.ttf');
+        }
+
+        h1 {
+            font-family: raquen;
+            font-size: 6rem;
+            margin: 1rem 0;
+            width: fit-content;
+        }
+
+        p {
+            font-family: jetBrainsMono-regular;
+        }
+
+        img.logo {
+            width: 50px;
+            height: 50px;
+            margin: 1rem 1rem 0 0;
+        }
+
+        .swissflag {
+            font-size: 1.5rem;
         }
     </style>
 </head>
 
 <body>
     <div style="margin: 15% 15%;">
-        <h1 style="font-family: raquen; font-size: 6rem; margin:1rem 0; width: fit-content;">
+        <h1>
             Hi, my name is Sarah
         </h1>
-        <a href="https://www.adobe.com"><img src="./imgs/adobe-logo.png"
-                style="width: 50px;height: 50px; margin: 1rem 1rem 0 0;" /></a>
-        <a href="https://github.com/sasoara"><img src="./imgs/octo-cat-github.png"
-                style="width: 50px;height: 50px; margin: 1rem 1rem 0 0;" /></a>
+        <a href="https://www.adobe.com"><img src="./imgs/adobe-logo.png" class="logo" /></a>
+        <a href="https://github.com/sasoara" class="logo"><img src="./imgs/octo-cat-github.png" class="logo" /></a>
         <a href="https://www.linkedin.com/in/sarah-bettinger-730242149"><img src="./imgs/linkedin-logo.png"
-                style="width: 50px;height: 50px; margin: 1rem 1rem 0 0;" /></a>
-
+                class="logo" /></a>
+        <p>I am an apprentice in the field of application development at Adobe in Basel <span
+                class="swissflag">🇨🇭</span>.</p>
     </div>
 </body>
 
