@@ -15,6 +15,10 @@
             src: url('./fonts/JetBrainsMono-Regular.ttf');
         }
 
+        body {
+            margin: 15% 5% 1% 15%;
+        }
+
         h1 {
             font-family: raquen;
             font-size: 6rem;
@@ -24,6 +28,7 @@
 
         p {
             font-family: jetBrainsMono-regular;
+            font-size: 1rem;
         }
 
         img.logo {
@@ -32,24 +37,51 @@
             margin: 1rem 1rem 0 0;
         }
 
+        img.map {
+            width: auto;
+            padding: 1rem;
+            margin: 0 15% 0 0;
+        }
+
         .swissflag {
             font-size: 1.5rem;
+        }
+
+        .fancy-background {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div style="margin: 15% 15%;">
-        <h1>
-            Hi, my name is Sarah
-        </h1>
-        <a href="https://www.adobe.com"><img src="./imgs/adobe-logo.png" class="logo" /></a>
-        <a href="https://github.com/sasoara" class="logo"><img src="./imgs/octo-cat-github.png" class="logo" /></a>
-        <a href="https://www.linkedin.com/in/sarah-bettinger-730242149"><img src="./imgs/linkedin-logo.png"
-                class="logo" /></a>
-        <p>I am an apprentice in the field of application development at Adobe in Basel <span
-                class="swissflag">🇨🇭</span>.</p>
-    </div>
+    <h1>
+        Hi, my name is Sarah
+    </h1>
+    <a href="https://www.adobe.com"><img src="./imgs/adobe-logo.png" class="logo" /></a>
+    <a href="https://github.com/sasoara" class="logo"><img src="./imgs/octo-cat-github.png" class="logo" /></a>
+    <a href="https://www.linkedin.com/in/sarah-bettinger-730242149"><img src="./imgs/linkedin-logo.png"
+            class="logo" /></a>
+    <p>I am an apprentice in the field of application development at Adobe in Basel <span class="swissflag">🇨🇭</span>.
+    </p>
+    <a href="https://goo.gl/maps/tSsjewoNepLTMwzM9"><img class="map fancy-background" src="./imgs/map-grey.svg"
+            alt="map"></a>
+
 </body>
 
 </html>
