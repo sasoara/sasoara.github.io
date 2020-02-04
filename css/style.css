@@ -1,0 +1,70 @@
+/*
+Author:         Sarah Bettinger
+Description:    Styles my index.html
+*/
+
+@font-face {
+    font-family: raquen;
+    src: url('./fonts/Raquen.otf');
+}
+
+@font-face {
+    font-family: jetBrainsMono-regular;
+    src: url('./fonts/JetBrainsMono-Regular.ttf');
+}
+
+body {
+    margin: 15% 5% 1% 15%;
+}
+
+h1 {
+    font-family: raquen;
+    font-size: 6rem;
+    margin: 1rem 0;
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: jetBrainsMono-regular;
+    font-size: 1rem;
+}
+
+img.logo {
+    width: 50px;
+    height: 50px;
+    margin: 1rem 1rem 0 0;
+}
+
+img.map {
+    width: auto;
+    padding: 1rem;
+    margin: 0 15% 0 0;
+}
+
+.swissflag {
+    font-size: 1.5rem;
+}
+
+.fancy-background {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
