@@ -28,6 +28,14 @@ a {
     text-decoration: none;
 }
 
+a.basel:visited {
+    color: black;
+}
+
+a.basel:hover {
+    animation: zoom 0.7s ease;
+}
+
 p {
     font-family: jetBrainsMono-regular;
     font-size: 1rem;
@@ -39,8 +47,9 @@ img.logo {
     margin: 1rem 1rem 0 0;
 }
 
-.swissflag {
-    font-size: 1.5rem;
+img.swissflag {
+    width: 14px;
+    margin-bottom: 2px;
 }
 
 .fancy-background {
@@ -49,6 +58,7 @@ img.logo {
     animation: gradient 15s ease infinite;
 }
 
+/* - body - */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -61,4 +71,17 @@ img.logo {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* - "Basel" - */
+@keyframes zoom {
+    100% {
+        /* background-position: 0% 50%; */
+        font-size: 1.14rem;
+    }
+
+    0% {
+        font-size: 1rem;
+    }
+
 }
