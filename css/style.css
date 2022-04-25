@@ -28,12 +28,12 @@ a {
     text-decoration: none;
 }
 
-a.basel:visited,
-a.basel:link {
+a.ch:visited,
+a.ch:link {
     color: black;
 }
 
-a.basel:hover {
+a.ch:hover {
     animation: zoom 0.7s ease;
 }
 
@@ -74,7 +74,7 @@ img.swissflag {
     }
 }
 
-/* - "Basel" - */
+/* - "Switzerland" - */
 @keyframes zoom {
     100% {
         /* background-position: 0% 50%; */
